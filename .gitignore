@@ -1,0 +1,12 @@
+*.log
+*.pyc
+.cache/
+.coverage
+.idea/
+.vscode/
+zeroshot_topics.egg-info/
+build/
+dist/
+docs/build/
+venv/
+wheelhouse/
