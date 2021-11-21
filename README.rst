@@ -19,6 +19,7 @@ Usage
 ------
 
 .. code-block:: python 
+
     from zeroshot_topics import ZeroShotTopicFinder
     zsmodel = ZeroShotTopicFinder()
     text = """can you tell me anything else okay great tell me everything you know about George_Washington. 
