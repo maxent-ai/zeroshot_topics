@@ -9,7 +9,7 @@ Installation
 
 zeroshot_topics is distributed on `PyPI <https://pypi.org>`_ as a universal
 wheel and is available on Linux/macOS and Windows and supports
-Python 2.7/3.5+ and PyPy.
+Python 3.7+ and PyPy.
 
 .. code-block:: bash
 
