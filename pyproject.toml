@@ -1,11 +1,11 @@
 [metadata]
 name = 'zeroshot_topics'
 version = '0.0.1'
-description = ''
+description = 'Topic Inference with Zeroshot models'
 author = 'AnjanaRita'
 author_email = 'ritaanjana1993@gmail.com'
 license = 'MIT/Apache-2.0'
-url = 'https://github.com/_/zeroshot_topics'
+url = 'https://github.com/AnjanaRita/zeroshot_topics'
 
 [requires]
 python_version = ['2.7', '3.5', '3.6', 'pypy', 'pypy3']

@@ -18,12 +18,12 @@ with open('zeroshot_topics/__init__.py', 'r') as f:
 with open('README.rst', 'r', encoding='utf-8') as f:
     readme = f.read()
 
-REQUIRES = []
+REQUIRES = [i.strip() for i in open("requirements.txt").readlines()]
 
 kwargs = {
     'name': 'zeroshot_topics',
     'version': version,
-    'description': '',
+    'description': 'Topic Inference with Zeroshot models',
     'long_description': readme,
     'author': 'AnjanaRita',
     'author_email': 'ritaanjana1993@gmail.com',
