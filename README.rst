@@ -18,9 +18,7 @@ Python 3.7+ and PyPy.
 License
 -------
 
-zeroshot_topics is distributed under the terms of both
+zeroshot_topics is distributed under the terms of
 
 - `MIT License <https://choosealicense.com/licenses/mit>`_
 - `Apache License, Version 2.0 <https://choosealicense.com/licenses/apache-2.0>`_
-
-at your option.
