@@ -32,6 +32,7 @@ The algorithm contains, 4 stages:
 3. **Trace the Hypernyms for the keywords**: Identify the Hypernyms(the root/parent word) and use this as the psuedo-label for the zeroshot classifier. 
 4. **Zeroshot classification**: Use the Hypernyms and documents to label via zeroshot classifiers. 
 
+Note: Currently, this tends to work well on short-texts in general, in the future I intend to experiment and see how we can support long texts as well. 
 
 Installation
 ------------
@@ -65,12 +66,14 @@ Usage
 Roadmap
 -------
 
-Some things that i plan to add in the coming days: 
+Some things that i plan to add in the coming days, if there's some interest in this work by the community. 
 
 - Support custom keyword extractors.
 - Support Custom Knowledge-graphs & taxonomy.
 - Support Custom Zeroshot-classifiers in the pipeline.
 - Add Usecase examples & improve documentation.
+- Optimise the overall library and make it a faster.
+- Support Long Text documents.
 
 License
 -------
