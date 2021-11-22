@@ -1,6 +1,8 @@
 zeroshot_topics
 ===============
 
+.. image:: https://static.pepy.tech/personalized-badge/zeroshot_topics?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads
+
 .. contents:: **Table of Contents**
     :backlinks: none
 
@@ -23,10 +25,12 @@ Algorithm
 
 The algorithm contains, 4 stages: 
 
-1. Keyword & Keyphrase extraction
-2. Keyword/Keyphrase expansion via knowledge graphs/Taxanomy
-3. Trace the Hypernyms for the keywords
-4. Use the Hypernyms and texts to label via zeroshot classifiers. 
+.. image:: assets/zstm.png
+
+1. **Keyword & Keyphrase extraction**: This is done with the help of `KeyBERT <https://github.com/MaartenGr/KeyBERT>`_. but really any sort of keyword extractor can be used.
+2. **Keyword/Keyphrase expansion via knowledge graphs/Taxanomy**: Then we expand the important keywords we discovered by using some sort of taxanomy/knowledge graph like wordnet, conceptnet etc. 
+3. **Trace the Hypernyms for the keywords**: Identify the Hypernyms(the root/parent word) and use this as the psuedo-label for the zeroshot classifier. 
+4. **Zeroshot classification**: Use the Hypernyms and documents to label via zeroshot classifiers. 
 
 
 Installation
@@ -58,6 +62,15 @@ Usage
     # Output - Topics: ['War', 'Head Of State']
     
 
+Roadmap
+-------
+
+Some things that i plan to add in the coming days: 
+
+- Support custom keyword extractors.
+- Support Custom Knowledge-graphs & taxonomy.
+- Support Custom Zeroshot-classifiers in the pipeline.
+- Add Usecase examples & improve documentation.
 
 License
 -------
