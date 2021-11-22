@@ -16,6 +16,18 @@ if there are tools which can help us get started quickly with minimal labelled d
 **But what if you do not have any labelled data at all? is there a way to still label your data automatically in some way?**
 That's where **zeroshot_topics** might be useful! to help you to be up and running quickly. 
 
+*zeroshot_topics* let's you do exactly that! it leverages the power of zeroshot-classifiers, transformers & knowledge graphs to automatically suggest labels/topics from your text data. all you need to do is point it towards your data. 
+
+Algorithm
+---------
+
+The algorithm contains, 4 stages: 
+
+1. Keyword & Keyphrase extraction
+2. Keyword/Keyphrase expansion via knowledge graphs/Taxanomy
+3. Trace the Hypernyms for the keywords
+4. Use the Hypernyms and texts to label via zeroshot classifiers. 
+
 
 Installation
 ------------
