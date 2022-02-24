@@ -1,6 +1,10 @@
 import attr
 from keybert import KeyBERT
 from .utils import load_zeroshot_model
+
+import nltk
+nltk.download('wordnet')
+
 from nltk.corpus import wordnet as wn
 
 classifier = load_zeroshot_model()
