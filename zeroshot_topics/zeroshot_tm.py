@@ -7,7 +7,8 @@ nltk.download('wordnet')
 
 from nltk.corpus import wordnet as wn
 
-classifier = load_zeroshot_model()
+classifier = None
+# load_zeroshot_model()
 
 
 @attr.s
@@ -22,9 +23,14 @@ class ZeroShotTopicFinder:
     """
 
     model = attr.ib(default='all-MiniLM-L6-v2')
+    classifier_model = attr.ib(default='valhalla/distilbart-mnli-12-6')
+
 
     def __attrs_post_init__(self):
         self.model = KeyBERT(self.model)
+
+        global classifier
+        classifier = classifier or load_zeroshot_model(self.classifier_model)
 
     def find_topic(self, text, n_topic=2):
         """
