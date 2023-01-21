@@ -1,17 +1,18 @@
-[metadata]
+[project]
 name = 'zeroshot_topics'
 version = '0.0.1'
 description = 'Topic Inference with Zeroshot models'
 author = 'AnjanaRita'
 author_email = 'ritaanjana1993@gmail.com'
-license = 'MIT/Apache-2.0'
+license = 'MIT'
 url = 'https://github.com/AnjanaRita/zeroshot_topics'
 
 [requires]
 python_version = ['2.7', '3.5', '3.6', 'pypy', 'pypy3']
 
 [build-system]
-requires = ['setuptools', 'wheel']
+build-backend = 'hatchling.build'
+requires = ['hatchling', 'setuptools', 'wheel']
 
 [tool.hatch.commands]
 prerelease = 'hatch build'
